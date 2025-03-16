@@ -5,7 +5,7 @@ import java.util.*;
 /**
  * Representa una agenda de contactos con operaciones básicas de gestión.
  */
-public class Agenda {
+public class Agenda implements IAgenda {
     private List<Persona> contacts;
 
     /**
