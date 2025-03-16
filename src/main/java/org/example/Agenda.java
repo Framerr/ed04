@@ -6,7 +6,7 @@ import java.util.*;
  * Representa una agenda de contactos con operaciones básicas de gestión.
  */
 public class Agenda {
-    private List<Contacto> contacts;
+    private List<Persona> contacts;
 
     /**
      * Constructor que inicializa una agenda vacía.
@@ -46,7 +46,7 @@ public class Agenda {
      * Obtiene la lista completa de contactos.
      * @return Lista de contactos.
      */
-    public List<Contacto> getContacts() {
+    public List<Persona> getContacts() {
         return this.contacts;
     }
 }

@@ -8,12 +8,12 @@ public class Main {
 
         // Imprimir todos los contactos de la agenda.
         System.out.println("Todos los contactos: ");
-        for (Contacto c : agendaContactos.getContacts()) {
+        for (Persona c : agendaContactos.getContacts()) {
             System.out.println(c.getName() + " -> " + c.getPhones());
         }
 
         System.out.println("\nDespués de operaciones: ");
-        for (Contacto c : agendaContactos.getContacts()) {
+        for (Persona c : agendaContactos.getContacts()) {
             System.out.println(c.getName() + " -> " + c.getPhones());
         }
     }
