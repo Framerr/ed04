@@ -6,7 +6,7 @@ import java.util.List;
 /**
  * Representa un contacto con nombre y lista de teléfonos.
  */
-class Contacto {
+public class Contacto {
     private String name;
     private List<String> phones;
 
