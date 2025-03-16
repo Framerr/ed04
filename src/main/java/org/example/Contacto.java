@@ -4,14 +4,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Representa un contacto con nombre y lista de teléfonos.
+ * Representa un contacto con un nombre y una lista de teléfonos.
  */
-public class Contacto {
+class Contacto {
     private String name;
     private List<String> phones;
 
     /**
-     * Constructor para crear un nuevo contacto.
+     * Crea un nuevo contacto con un teléfono inicial.
      * @param name Nombre del contacto.
      * @param phone Teléfono inicial.
      */
@@ -26,14 +26,30 @@ public class Contacto {
      * @return Nombre del contacto.
      */
     public String getName() {
-        return this.name;
+        return name;
+    }
+
+    /**
+     * Establece un nuevo nombre para el contacto.
+     * @param name Nuevo nombre.
+     */
+    public void setName(String name) {
+        this.name = name;
     }
 
     /**
      * Obtiene la lista de teléfonos del contacto.
-     * @return Lista de teléfonos.
+     * @return Lista de teléfonos (copia defensiva).
      */
     public List<String> getPhones() {
-        return this.phones;
+        return new ArrayList<>(phones); // Copia para encapsulación
+    }
+
+    /**
+     * Reemplaza la lista de teléfonos del contacto.
+     * @param phones Nueva lista de teléfonos.
+     */
+    public void setPhones(List<String> phones) {
+        this.phones = new ArrayList<>(phones); // Copia para encapsulación
     }
 }
